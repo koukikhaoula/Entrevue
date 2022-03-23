@@ -9,19 +9,14 @@ import com.example.entrevueSpringBoot.entites.Film;
 import com.example.entrevueSpringBoot.repository.FilmRepository;
 
 @Service
-
 public class FilmService {
 
 	@Autowired
-
 	private FilmRepository filmRepository;
 
 	public Film obtenirFilm(Long id)
-
 	{
-
 		return filmRepository.getById(id);
-
 	}
 
 	public Film ajouterFilm(Film film) throws Exception {
