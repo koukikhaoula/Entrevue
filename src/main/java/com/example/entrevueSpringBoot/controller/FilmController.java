@@ -37,7 +37,7 @@ public class FilmController {
 
 		Film film = filmService.obtenirFilm(id);
 
-		return new ResponseEntity<Film>(film, HttpStatus.OK);
+		return new ResponseEntity<>(film, HttpStatus.OK);
 
 	}
 
@@ -48,7 +48,7 @@ public class FilmController {
 
 		Film nouveaufilm = filmService.ajouterFilm(film);
 
-		return new ResponseEntity<Film>(nouveaufilm, HttpStatus.CREATED);
+		return new ResponseEntity<>(nouveaufilm, HttpStatus.CREATED);
 
 	}
 
